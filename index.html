@@ -36,19 +36,21 @@
           <div
             class="bg-[#41ff6b1a] w-24 h-12 rounded-[50px] flex justify-center items-center gap-3"
           >
-            <h1 class="font-bold">0</h1>
+            <h1 id="heart-count" class="font-bold">0</h1>
             <img class="w-6 h-6" src="./assets/heart.png" alt="" />
           </div>
           <div
             class="bg-[#41ff6b1a] w-24 h-12 rounded-[50px] flex justify-center items-center gap-3"
           >
-            <h1 class="font-bold">100</h1>
+            <h1 id="coins" class="font-bold">100</h1>
             <img class="w-6 h-6" src="./assets/coin.png" alt="" />
           </div>
           <div
             class="bg-[#00A63E] w-24 h-12 rounded-[50px] flex justify-center items-center gap-3"
           >
-            <h1 class="font-semibold text-white"><span>2</span> Copy</h1>
+            <h1 class="font-semibold text-white">
+              <span id="copy-count">2</span> Copy
+            </h1>
           </div>
         </div>
       </nav>
@@ -70,7 +72,8 @@
       class="lg:grid lg:grid-cols-12 lg:gap-4 lg:max-w-[1380px] lg:mx-auto bg-green-100 p-5 mx-auto"
     >
       <div
-        class="card-container lg:grid lg:grid-cols-3 col-span-9 lg:max-w-[1270px] mt-5 ml-4 gap-3 grid-cols-1"
+        id="card-container"
+        class="lg:grid lg:grid-cols-3 col-span-9 lg:max-w-[1270px] mt-5 ml-4 gap-3 grid-cols-1"
       >
         <!-- National Emergency -->
         <div class="card bg-base-100 lg:w-80 shadow-lg">
@@ -83,17 +86,20 @@
             <i class="fa-regular fa-heart"></i>
           </div>
           <div class="card-body">
-            <h2 class="card-title font-bold text-lg">
+            <h2 id="service-name" class="card-title font-bold text-lg">
               National Emergency Number
             </h2>
             <p class="text-gray-400">National Emergency</p>
-            <h1 class="text-3xl font-bold">999</h1>
+            <h1 class="service-number text-3xl font-bold">999</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">All</h5>
             <div class="card-actions justify-between">
               <button class="btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-emergency"
+                class="call-btn btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -112,13 +118,16 @@
           <div class="card-body">
             <h2 class="card-title font-bold text-lg">Police Helpline Number</h2>
             <p class="text-gray-400">Police</p>
-            <h1 class="text-3xl font-bold">999</h1>
+            <h1 class="service-number text-3xl font-bold">999</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">Police</h5>
             <div class="card-actions justify-between">
               <button class="btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-police"
+                class="call-btn btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -137,13 +146,16 @@
           <div class="card-body">
             <h2 class="card-title font-bold text-lg">Fire Service Number</h2>
             <p class="text-gray-400">Fire Service</p>
-            <h1 class="text-3xl font-bold">999</h1>
+            <h1 class="service-number text-3xl font-bold">999</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">Fire</h5>
             <div class="card-actions justify-between">
               <button class="btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-fire"
+                class="call-btn btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -162,13 +174,16 @@
           <div class="card-body">
             <h2 class="card-title font-bold text-lg">Ambulance Service</h2>
             <p class="text-gray-400">Ambulance</p>
-            <h1 class="text-3xl font-bold">1994-999999</h1>
+            <h1 class="service-number text-3xl font-bold">1994-999999</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">Health</h5>
             <div class="card-actions justify-between">
-              <button class="btn btn-active bg-white px-9">
+              <button class="call-btn btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-ambulance"
+                class="btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -187,13 +202,16 @@
           <div class="card-body">
             <h2 class="card-title font-bold text-lg">Women & Child Helpline</h2>
             <p class="text-gray-400">Women & Child Helpline</p>
-            <h1 class="text-3xl font-bold">109</h1>
+            <h1 class="service-number text-3xl font-bold">109</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">Help</h5>
             <div class="card-actions justify-between">
               <button class="btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-women-child"
+                class="call-btn btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -214,13 +232,16 @@
               Anti-Corruption Helpline
             </h2>
             <p class="text-gray-400">Anti-Corruption</p>
-            <h1 class="text-3xl font-bold">106</h1>
+            <h1 class="service-number text-3xl font-bold">106</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">Govt.</h5>
             <div class="card-actions justify-between">
               <button class="btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-anti-corruption"
+                class="call-btn btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -239,13 +260,16 @@
           <div class="card-body">
             <h2 class="card-title font-bold text-lg">Electricity Helpline</h2>
             <p class="text-gray-400">Electricity Outage</p>
-            <h1 class="text-3xl font-bold">16216</h1>
+            <h1 class="service-number text-3xl font-bold">16216</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">Electricity</h5>
             <div class="card-actions justify-between">
               <button class="btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-electricity"
+                class="call-btn btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -264,13 +288,16 @@
           <div class="card-body">
             <h2 class="card-title font-bold text-lg">Brac Helpline</h2>
             <p class="text-gray-400">Brac</p>
-            <h1 class="text-3xl font-bold">16445</h1>
+            <h1 class="service-number text-3xl font-bold">16445</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">NGO</h5>
             <div class="card-actions justify-between">
               <button class="btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-brac"
+                class="call-btn btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -291,13 +318,16 @@
               Bangladesh Railway Helpline
             </h2>
             <p class="text-gray-400">Bangladesh Railway</p>
-            <h1 class="text-3xl font-bold">163</h1>
+            <h1 class="service-number text-3xl font-bold">163</h1>
             <h5 class="bg-gray-200 w-fit px-4 py-2 rounded-2xl">Travel</h5>
             <div class="card-actions justify-between">
               <button class="btn btn-active bg-white px-9">
                 <i class="fa-regular fa-copy rotate-90"></i>Copy
               </button>
-              <button class="btn btn-active text-white px-9 bg-[#00A63E]">
+              <button
+                id="call-railway"
+                class="call-btn btn btn-active text-white px-9 bg-[#00A63E]"
+              >
                 <i class="fa-solid fa-phone rotate-90"></i>Call
               </button>
             </div>
@@ -313,23 +343,15 @@
             <i class="fa-regular fa-clock"></i> Call history
           </h1>
           <button
+            id="clear-btn"
             class="btn btn-active text-white px-9 bg-[#00A63E] rounded-2xl"
           >
             Clear
           </button>
         </div>
-        <div
-          class="flex justify-between items-center mt-3 bg-gray-50 p-4 rounded-sm"
-        >
-          <div>
-            <h1 class="font-bold">Fire Service Number</h1>
-            <h5 class="text-gray-500">999</h5>
-          </div>
-          <div>
-            <h6>11:36:58 AM</h6>
-          </div>
-        </div>
+        <div id="history-box"></div>
       </div>
     </main>
+    <script src="./script/script.js"></script>
   </body>
 </html>
